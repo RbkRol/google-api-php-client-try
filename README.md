@@ -58,16 +58,20 @@ Ahora con la información anterior, podremos colocarla en los parámetros necesa
 
 [Google API Client Libraries](https://developers.google.com/api-client-library/)
 
-(Google API Client Libraries)[https://developers.google.com/api-client-library/php/start/installation]
+[Google API Client Libraries](https://developers.google.com/api-client-library/php/start/installation)
+
 Github del [google-php-api-client](https://github.com/google/google-api-php-client)
-Ejemplos del [google-api-php-client](https://github.com/google/google-api-php-client/tree/master/examples)
-Eduardo Casas:
-* Blog [Subiendo archivos a Google Drive con PHP](https://www.eduardocasas.com/es/blog/05-12-2012/subiendo-archivos-a-google-drive-con-php)
+
+El código para subir archivos de gran tamaño está en los ejemplos del [google-api-php-client](https://github.com/google/google-api-php-client/tree/master/examples), llamado **large-file-upload.php**
+
+Este framework es para ejecutar los archivos de test en la carpeta _tests_ del mismo github: [PHPUnit](https://phpunit.de/getting-started-with-phpunit.html)
+
+En lugar de usar el google-api-php-client, usar el api para Google Drive, como expica Eduardo Casas:
+* Blog; [subiendo archivos a Google Drive con PHP](https://www.eduardocasas.com/es/blog/05-12-2012/subiendo-archivos-a-google-drive-con-php)
 * [Github de su ejemplo para Google Drive](https://github.com/eduardocasas/Google-Drive-PHP-API-Simple-App-Example/tree/master/google-api-php-client)
 
-[PHPUnit](https://phpunit.de/getting-started-with-phpunit.html)
 
-**API Cloud Storage**
-
-[Cloud Storage Client Libraries](https://cloud.google.com/storage/docs/reference/libraries#client-libraries-install-php)
+Usando el **API Cloud Storage**
+[Cloud Storage Client Libraries](https://cloud.google.com/storage/docs/reference/libraries)
+[Install Cloud Storage Client Libraries](https://cloud.google.com/storage/docs/reference/libraries#client-libraries-install-php)
 
