@@ -53,3 +53,21 @@ Estos JSON contienen la información vital para acceder al API que queramos util
 ## Lo padre: el código
 
 Ahora con la información anterior, podremos colocarla en los parámetros necesarios para comunicarnos correctamente.
+
+## Fuentes
+
+[Google API Client Libraries](https://developers.google.com/api-client-library/)
+
+(Google API Client Libraries)[https://developers.google.com/api-client-library/php/start/installation]
+Github del [google-php-api-client](https://github.com/google/google-api-php-client)
+Ejemplos del [google-api-php-client](https://github.com/google/google-api-php-client/tree/master/examples)
+Eduardo Casas:
+* Blog [Subiendo archivos a Google Drive con PHP](https://www.eduardocasas.com/es/blog/05-12-2012/subiendo-archivos-a-google-drive-con-php)
+* [Github de su ejemplo para Google Drive](https://github.com/eduardocasas/Google-Drive-PHP-API-Simple-App-Example/tree/master/google-api-php-client)
+
+[PHPUnit](https://phpunit.de/getting-started-with-phpunit.html)
+
+**API Cloud Storage**
+
+[Cloud Storage Client Libraries](https://cloud.google.com/storage/docs/reference/libraries#client-libraries-install-php)
+
