@@ -20,7 +20,7 @@ Lo siguiente describe lo que está documentado en el [github del api](https://gi
 
 Es recomendable el clonado del repositorio dentro de la carpeta correspondiente a su servidor local. Este ejemplo utiliza xampp, y la ubicación del repositorio está en _htdocs_.
 
-Para utilizar este api es **crucial tenerla habilitada** en el proyecto que va a enlazarla. ![](img/api-habilitada.png)
+Para utilizar este api es **crucial tenerla habilitada** en el proyecto que va a enlazarla. ![habilitar](img/api-habilitada.PNG)
 
 Hay dos formas de instalación para esta api en su proyecto:
 1. Utilizando Composer
@@ -42,11 +42,11 @@ Para esto, seguir los siguientes pasos: [Download the Release](https://github.co
 
 Es necesario datos como el ID del proyecto, API KEY...etc, que se pueden obtener en [la consola de google](http://developers.google.com/console)
 
-Después, seleccione el proyecto que desea conectar con la api y en la barra de menú lateral izquierda, ir a **Credenciales** [](img/credenciales.png) 
+Después, seleccione el proyecto que desea conectar con la api y en la barra de menú lateral izquierda, ir a **Credenciales** [](img/credenciales.PNG) 
 
-Ahí veremos las _Claves de API_ (API KEY) y los IDs de cliente de OAuth 2.0 ![img1](img/ClientSecret.png)
+Ahí veremos las _Claves de API_ (API KEY) y los IDs de cliente de OAuth 2.0 ![img1](img/ClientSecret.PNG)
 
-Seleccionamos en IDs de cliente de OAuth 2.0 el ID mostrado. Una vez seleccionado, en la parte superior central veremos la opción **DESCARGAR JSON** ![img2](img/oauth.png)
+Seleccionamos en IDs de cliente de OAuth 2.0 el ID mostrado. Una vez seleccionado, en la parte superior central veremos la opción **DESCARGAR JSON** ![img2](img/oauth.PNG)
 
 Este JSON contiene la información vital para acceder a cualquier API que queramos utilizar. Recuerde, en este caso es el _google-php-api-client_.
 
@@ -263,22 +263,22 @@ Nótese que se envía una ruta de un archivo (D:/Users/rrlopez/Downloads/ATC Tes
 php -S localhost:8000 -t examples/
 ~~~
 
-Navegue a localhost:8000. Verá la lista siguiente: ![](img/lista.png). Si no puede ver esta página de manera correcta, deberá añadir el json con la información de su id de proyecto mostrado anteriormente y renombrarlo "oauth-credentials.json".
+Navegue a localhost:8000. Verá la lista siguiente: ![](img/lista.PNG). Si no puede ver esta página de manera correcta, deberá añadir el json con la información de su id de proyecto mostrado anteriormente y renombrarlo "oauth-credentials.json".
 
-Elija _An example of a large file upload_. Observará la siguiente pantalla y dará clic en _Connect Me!_, que subirá el archivo de la ruta indicada anteriormente en el código ![](img/connect.png)
+Elija _An example of a large file upload_. Observará la siguiente pantalla y dará clic en _Connect Me!_, que subirá el archivo de la ruta indicada anteriormente en el código ![](img/connect.PNG)
 
-La página desplegará un error 400, como en el ejemplo a continuación: ![ejemplo](img/ejemplo.png):
+La página desplegará un error 400, como en el ejemplo a continuación: ![ejemplo](img/ejemplo.PNG):
 
 La URL mostrada, en este caso "http://localhost:8000/large-file-upload.php/" es la que deberá registrar en la lista oAuth, en la sección de **URIs de redirección autorizados**, la cual se muestra al dar clic en **ID de Cliente de Web** del menú Credenciales.
 
 Una vez clic en _Guardar_, actualice la página del navegador donde desplegó la lista de ejemplos (localhost:8000). Vuelva a ejecutar la opción _An example of a large file upload_. Si la página fue autorizada correctamente, su proyecto le solicitará que inicie sesión en su cuenta de Google para enviar el archivo a su Google Drive.
 
-Una vez que la carga se realice con éxito, podrá ver la confirmación a continuación: ![](img/salida.png)
+Una vez que la carga se realice con éxito, podrá ver la confirmación a continuación: ![](img/salida.PNG)
 
-Vaya al Google Drive para verificar la carga del archivo ![](img/success.png)
+Vaya al Google Drive para verificar la carga del archivo ![](img/success.PNG)
 
 ## Configuración para subir archivos mayores a 32 MB
-En el php.ini del servidor local deberá cambiar los siguientes parámetros, para evitar experimentar errores relacionados con el tiempo de respuesta y el tamaño límite del archivo a enviar. ![](img/error1.png)
+En el php.ini del servidor local deberá cambiar los siguientes parámetros, para evitar experimentar errores relacionados con el tiempo de respuesta y el tamaño límite del archivo a enviar. ![](img/error1.PNG)
 
 ~~~php
 ;el valor numérico representa segundos. Ajuste para 20 mins
