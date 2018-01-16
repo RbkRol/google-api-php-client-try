@@ -1,0 +1,120 @@
+.styled-select select {
+  width: 100%;
+  font-size: 14pt;
+  border: 1px;
+  border-radius: 0;
+  border-color: #c0c9cf;
+  border-style: hidden hidden solid;
+  background-image: url("../../assets/img/flechaCombos.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+label {
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: auto;
+}
+table {
+  width: 100%;
+}
+#año:focus{
+  outline:0 none;
+}
+#formulario:focus{
+  outline:0 none;
+
+}
+#mes:focus{  outline:0 none;
+
+}
+#negocio:focus{
+  outline:0 none;
+}
+table, th, td {
+  border: 1px solid #c0c9cf;
+}
+
+td, th{
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  height: 35px;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  color: rgb(31,63,121);
+}
+
+th{
+  font-size: 11pt;
+}
+
+td{
+  font-size: 10pt;
+}
+
+.inputfile {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.container{
+  width: 80%;
+  border: 1pt solid;
+  border-color: rgb(171,183,209);
+  background-color: rgb(249,250,252);
+  background-color: white;
+  margin-top: 30pt;
+  padding-top: 30pt;
+  padding-left: 5%;
+  padding-bottom: 30pt;
+  padding-right: 5%;
+  box-shadow: 5pt 10pt 10pt rgb(213,218,229);
+  line-height: 16pt;
+}
+.contenedor-secundario{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(31,63,121);
+  text-align: left;
+  font-size: 12pt;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #ff570a;
+  box-shadow: 0 0 0 0.2rem rgb(232,55,12);
+}
+
+.titulo{
+  font-weight: bold;
+  padding-bottom: 10pt;
+}
+#fecha{
+  width: 100%;
+  text-align: justify;
+  font-size: 14pt;
+  cursor: default;
+  color: rgb(31,63,121);
+}
+#botonEnviar{
+  margin-left: -30%;
+  margin-right: -30%;
+}
+

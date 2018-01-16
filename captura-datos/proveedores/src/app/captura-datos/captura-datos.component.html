@@ -1,0 +1,101 @@
+<div class="container">
+  <p class="titulo"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Captura de datos</p>
+  <div class="contenedor-secundario">
+    <div class="row">
+      <div class="col-md-9"></div>
+      <div class="col-md-3">
+        <p>Fecha:</p>
+        <label id="fecha"></label>
+      </div>
+    </div>
+    <br>
+    <form (ngSubmit)="accionEnviar()" #f="ngForm">
+
+      <div class="styled-select">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="centrar">Linea de negocio:
+              <select name="negocio" id="negocio" [(ngModel)]="gastos.lineaNegocio" #name="ngModel"
+                      (change)="cambiaColor($event,'negocio')" [disabled]="loading">
+                <option value="gmm_lp">Gastos Médicos</option>
+                <!--  <option value="Vida">Vida</option>
+                    <option value="Autos">Autos</option>
+                    <option value="Daños">Daños</option>-->
+              </select></p>
+          </div>
+          <div class="col-md-3">
+            <p class="centrar">Mes:
+              <select name="mes" id="mes" [(ngModel)]="gastos.mes" #name="ngModel" (change)="cambiaColor($event,'mes')" [disabled]="loading">
+                <option value="01">Enero</option>
+                <option value="02">Febrero</option>
+                <option value="03">Marzo</option>
+                <option value="04">Abril</option>
+                <option value="05">Mayo</option>
+                <option value="06">Junio</option>
+                <option value="07">Julio</option>
+                <option value="08">Agosto</option>
+                <option value="09">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+              </select></p>
+          </div>
+          <div class="col-md-3">
+            <p class="centrar">Año:
+              <select name="año" id="año" [(ngModel)]="gastos.anio" #name="ngModel"
+                      (change)="cambiaColor($event,'año')" [disabled]="loading">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select></p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="centrar">Tipo de archivo:
+              <select [(ngModel)]="gastos.tipoArchivo" name="formulario" id="formulario" #name="ngModel"
+                      (change)="cambiaColor($event,'formulario')" [disabled]="loading">
+             <!--   <option value="insumos_medicos">Hospitales (ATC)</option>
+                <option value="medicamentos">Medicamentos (CPM)</option>
+                <option value="servicios_auxiliares">Servicios auxiliares</option> -->
+              </select></p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <table class="tabla" id="tabla">
+          <tr>
+            <th>Adjuntar archivos</th>
+          </tr>
+          <tr>
+            <td id="columna"><input type="file" accept=".txt, .csv" name="file" id="file" class="inputfile"
+                                    (change)="fileChangeEvent($event)" [disabled]="loading">
+              <label for="file" id="etiqueta"><span class="glyphicon glyphicon-open" aria-hidden="true"></span></label>
+            </td>
+          </tr>
+        </table>
+        <input type="text" id="nombrearchivo" hidden>
+        <br>
+        <div class="botonCentrado" align="center">
+          <br>
+          <button class="btn btn-primary" id="botonEnviar" name="botonEnviar" disabled>Enviar <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" /></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

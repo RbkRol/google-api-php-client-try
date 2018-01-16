@@ -1,0 +1,143 @@
+/*Estilos generales*/
+
+/*Estilos del header*/
+header{
+  background-color: rgb(237,237,237);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+  color: rgb(31,63,121);
+  height: 100pt;
+  border-bottom:1px solid rgb(213,218,219);
+}
+
+.logo{
+  padding-left: 18%;
+  padding-top: 15%;
+  width: 70%;
+
+}
+label{
+ float:left;
+  padding-top: 3.5%;
+  padding-left: 5%;
+  width: 40%;
+  font-weight: normal;
+}
+
+#vertical-bar {
+  border-left: 1px solid rgb(213,218,219);
+  width:1px;
+  height:100%;
+  float: right;
+}
+
+.primer-contenedor{
+  float:left;
+  height: 100pt;
+  width: 20%;
+}
+
+.cerrar-sesion{
+  font-size: 11pt;
+  text-align: center;
+  float: right;
+  padding-top: 3%;
+  padding-right: 6%;
+  color: rgb(85,102,122);
+}
+
+.linea{
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgb(0,70,129), rgb(7,46,88));
+  float:left;
+}
+
+/*Estilos del body*/
+body{
+  background-image:url('../img/administradorUsusarios.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #f9fafc;
+}
+
+.body-tool {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #f9fafc;
+}
+
+/*Estilos para botón*/
+.btn{
+  background-color: #ff570a;
+  border-color: #ff570a;
+}
+
+.btn:hover{
+  background-color: #ffbda4ce;
+  border-color: #ff4f0a96;
+  color: #000000ce;
+}
+
+.btn:select{
+  background-color: white;
+  color: #ff570a;
+}
+
+.btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ff570a;
+  border-color: #ff570a;
+  box-shadow: 0 0 0 0.2rem #ff570a;
+}
+
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(232,55,12);
+}
+
+.btn-primary.focus{
+  color: #fff;
+}
+
+/*Estilos del footer*/
+.texto{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(31,63,121);
+  text-align: center;
+  font-size: 12pt;
+  margin-bottom: 2%;
+  margin-top: 4%;
+}
+
+footer{
+    height: 100pt;
+    background-image: linear-gradient(90deg, rgb(0,70,175), rgb(7,46,88));
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.footer-logo{
+  width: 16%;
+  margin-left: 41.5%;
+  margin-top: 4%;
+}
+
+.express-logo{
+  width: 8%;
+  float: right;
+  margin-right: 4.5%;
+  margin-top: 2.5%;
+  min-width: 80px;
+}
+
+:-webkit-scrollbar-thumb{
+  background: rgb(151,151,151);
+  border-radius: 8pt;
+}
+
+:-webkit-scrollbar-track{
+  background: rgb(216,216,216);
+
+}
