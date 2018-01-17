@@ -1,5 +1,5 @@
 # google-api-php-client-try
-Realizando un ejemplo siguiendo documentación del uso de esta biblioteca
+Realizando un ejemplo siguiendo documentación del uso de esta biblioteca para subir archivos al Google Drive.
 
 ## Instalar composer (Windows)
 
@@ -290,6 +290,8 @@ memory_limit=700M
 
 # Trabajo futuro
 Realizar el deploy de la aplicación mediante el uso de PHP standard || flexible environment. Se busca que esta funcionalidad de carga de archivos se integre con Angular y php
+
+También se busca utilizar el api de cloud storage, en la carpeta plantilla se tiene un ejemplo no probado por ahora.
 
 ## Fuentes
 

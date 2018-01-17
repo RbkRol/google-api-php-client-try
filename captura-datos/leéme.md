@@ -1,1 +1,0 @@
-Esta aplicación se realizó bajo el ambiente standard de PHP -- App Engine
